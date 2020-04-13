@@ -18,11 +18,18 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   consolidated_cart = []
-  cart.each do |item|
-    
-    consolidated_cart << item 
+  index = 0 
+  while index < cart.length do 
+    item = find_item_by_name_in_collection(cart[index][:item], consolidated_cart)
+    if item 
+      consolidated_cart[index][:count] += 1 
+    else 
+      cart[index][:count] = 1 
+      consolidated_cart << cart[index]
+    end
+    index += 1 
   end 
-  pits consolidated_cart
+  consolidated_cart
 end
 
 
