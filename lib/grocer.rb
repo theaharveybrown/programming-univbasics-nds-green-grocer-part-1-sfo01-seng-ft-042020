@@ -24,7 +24,7 @@ def consolidate_cart(cart)
   while index < cart.length do 
     item = find_item_by_name_in_collection(cart[index][:item], consolidated_cart)
     if item 
-      consolidated_index = 0 
+      c_index = 0 
       while consolidated_index < consolidated_cart.length do 
         if consolidated_cart[consolidated_index][:item] === item[:item]
         
