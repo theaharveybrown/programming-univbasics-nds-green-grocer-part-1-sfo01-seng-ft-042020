@@ -48,5 +48,5 @@ grocery_shelf = [
   { :item => "HOT SAUCE", :price => 1.75, :clearance => false },
   { :item => "CANNED BEANS", :price => 3.00, :clearance => true }
 ]
-find_item_by_name_in_collection("CANNED BEANS", grocery_shelf)
-# find_item_by_name_in_collection("I DONT EXIST", grocery_shelf)
+
+consolidate_cart(grocery_shelf)
