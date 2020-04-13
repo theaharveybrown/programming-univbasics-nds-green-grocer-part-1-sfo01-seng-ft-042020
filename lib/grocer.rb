@@ -26,19 +26,19 @@ def consolidate_cart(cart)
     if item 
       final_index = 0 
       while final_index < final_cart.length do 
-        if consolidated_cart[final_index][:item] === item[:item]
+        if final_cart[final_index][:item] === item[:item]
         
-          consolidated_cart[final_index][:count] += 1 
+          final_cart[final_index][:count] += 1 
         end
         final_index += 1 
       end
     else 
       cart[index][:count] = 1 
-      consolidated_cart << cart[index]
+      final_cart << cart[index]
     end
     index += 1 
   end 
-  puts consolidated_cart
+  puts final_cart
 end
 
 grocery_shelf = [
