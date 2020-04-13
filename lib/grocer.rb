@@ -2,6 +2,13 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
+  item = nil
+  collection.each do |grocery| 
+    if grocery[:item] == name 
+      item = grocery
+    end 
+  end 
+  item
 
 end
 
@@ -10,8 +17,26 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-
+  cart.each do |item|
+    if item[:count] 
+      item[:count] += 1
+    else 
+      item[count] = 1 
+    end 
+  end 
+  puts cart
 end
 
 
-  
+grocery_shelf = [
+  { :item => "CANNED BEANS", :price => 3.00, :clearance => true },
+  { :item => "CANNED CORN", :price => 2.50, :clearance => false },
+  { :item => "SALSA", :price => 1.50, :clearance => false },
+  { :item => "TORTILLAS", :price => 2.00, :clearance => false },
+  { :item => "HOT SAUCE", :price => 1.75, :clearance => false },
+  { :item => "CANNED BEANS", :price => 3.00, :clearance => true }
+]
+
+consolidate_cart(grocery_shelf)
+
+# find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
