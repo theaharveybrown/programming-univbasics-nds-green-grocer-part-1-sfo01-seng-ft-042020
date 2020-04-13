@@ -6,8 +6,6 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |grocery| 
     if grocery[:item] == name 
       return grocery
-    else 
-      return nil 
     end 
   end 
   
