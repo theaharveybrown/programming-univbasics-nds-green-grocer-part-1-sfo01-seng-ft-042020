@@ -25,7 +25,7 @@ def consolidate_cart(cart)
     if item 
       puts "ITEM #{item}"
       consolidated_cart << item
-    else 
+    # else 
       # cart[index][:count] = 1 
       # consolidated_cart << cart[index]
     end
