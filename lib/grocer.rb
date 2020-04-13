@@ -31,8 +31,7 @@ def consolidate_cart(cart)
     end
     index += 1 
   end 
-  consolidated_cart
-end
+  puts consolidated_cart
 
 
 grocery_shelf = [
