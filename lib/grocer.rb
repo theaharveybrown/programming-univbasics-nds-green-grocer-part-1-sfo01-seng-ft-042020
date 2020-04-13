@@ -43,4 +43,3 @@ grocery_shelf = [
 ]
 
 consolidate_cart(grocery_shelf)
-# find_item_by_name_in_collection("CANNED CORN", grocery_shelf)
