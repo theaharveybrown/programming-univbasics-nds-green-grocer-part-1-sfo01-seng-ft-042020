@@ -2,10 +2,12 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   #
   # Consult README for inputs and outputs
-  item = nil
+ 
   collection.each do |grocery| 
     if grocery[:item] == name 
       item = grocery
+    else 
+      return nil 
     end 
   end 
   puts item
