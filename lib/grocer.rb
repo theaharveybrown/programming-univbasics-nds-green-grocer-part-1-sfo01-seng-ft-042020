@@ -5,12 +5,12 @@ def find_item_by_name_in_collection(name, collection)
  
   collection.each do |grocery| 
     if grocery[:item] == name 
-      item = grocery
+      return grocery
     else 
       return nil 
     end 
   end 
-  puts item
+  
 
 end
 
