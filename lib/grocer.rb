@@ -25,14 +25,11 @@ def consolidate_cart(cart)
     if item 
       puts "ITEM #{item}"
       consolidated_cart << item
-    # else 
-      # cart[index][:count] = 1 
-      # consolidated_cart << cart[index]
     end
     index += 1 
   end 
   puts consolidated_cart
-
+end
 
 grocery_shelf = [
   { :item => "CANNED BEANS", :price => 3.00, :clearance => true },
