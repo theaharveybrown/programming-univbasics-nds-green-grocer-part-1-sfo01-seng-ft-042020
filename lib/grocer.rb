@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     if item[:count] 
       item[:count] += 1
     else 
-      item[count] = 1 
+      item[:count] = 1 
     end 
   end 
   puts cart
