@@ -28,7 +28,7 @@ def consolidate_cart(cart)
       while consolidated_index < consolidated_cart.length do 
         if consolidated_cart[consolidated_index][:item] === item[:item]
         
-          consolidated_cart[index][:count] += 1 
+          consolidated_cart[consolidated_index][:count] += 1 
         end
         consolidated_index += 1 
       end
