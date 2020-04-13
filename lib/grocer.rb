@@ -42,4 +42,4 @@ grocery_shelf = [
   { :item => "CANNED BEANS", :price => 3.00, :clearance => true }
 ]
 find_item_by_name_in_collection("CANNED BEANS", grocery_shelf)
-find_item_by_name_in_collection("I DONT EXIST", grocery_shelf)
+# find_item_by_name_in_collection("I DONT EXIST", grocery_shelf)
